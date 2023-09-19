@@ -1,0 +1,8 @@
+mixformer：在原始mixformer的基础上，右侧分支：dpcov+dprnn+attention，左侧分支dprnn+attention
+
+DPCMN_mixformer_noattention_depthwisefirst:在mixformer的基础上，去掉了右侧分支的attention 块
+DPCMN_mixformer_noattention：在mixformer的基础上，去掉了attention块，且先做dprnn在做dpconv
+DPCMN_mixformer_nodprnn:在mixformer的基础上，右侧分支不使用dprnn结构
+
+
+DPCMN_mixformer_noattention_depthwisefirst:这个是最后论文所采纳的结构
